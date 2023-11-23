@@ -1,12 +1,22 @@
-export default function Header () {
+import React from 'react';
+import img from "../images/timlines.svg";
+
+function Header () {
     return (
-        <div className="header">
-            <div className="page-title">
-             <h1>Home</h1>
-            </div>
-            <div className="top-tweets">
-                <img src="../images/shining.png" alt="logo for popular tweet" />
-            </div>
-        </div>        
+        <header className="header">
+            <Home />           
+            <Icone />
+        </header>        
     )
 }
+function Home (){
+    return(
+        <h1 className="page-title">Home</h1>
+    );
+}
+function Icone (){
+    return (
+        <img className="top-tweets" src={img} alt='logo for popular tweet' />
+    )
+}
+export default Header; 
