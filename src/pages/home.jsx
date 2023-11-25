@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
+import Header from '../components/header.jsx';
 import Tweet_Editor from '../components/tweetEditor';
 import Tweets from '../components/tweets';
 import feuille from "../images/feuille.png"
