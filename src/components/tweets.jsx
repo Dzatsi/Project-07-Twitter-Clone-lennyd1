@@ -1,44 +1,44 @@
-import profil from "../images/profil.png"
 import group from "../images/Group.svg"
+import retweet from "../images/Retweet.svg"
+import comment from "../images/comment.svg"
+import downlord from "../images/Downlord.svg"
+import like from "../images/Like.svg"
 
-export default function Tweets(){
-return (
-    <Tweet />
-)
-}
-function Tweet(){
-    return(
-        <>
-        <Profil />
-        <Tweet_title_author />
-        <Tweet_title_details />
-        <Tweet_text />
-        </>
-        
-    )
-}
-function Profil (){
-    return(
-        <img src={profil} />
-    )
-}
-function Tweet_title_author(){
-    return(
-        <h2 tweet-title-author>CNN</h2>
-    )
-}
-function Tweet_title_details(){
-    return(
+export default function Tweets(props){
+    return (
+    
         <div className="tweet">
-           <img src={group} /><span className="tweet-title-details">@CNN . 7m</span>        
+            <div>
+                <img  src={props.profil} />
+            </div>
+            <div className="tweet-content">
+                <div className="tweet-title" >
+                    <h2 tweet-title-author>{props.title} </h2>
+                    <img src={group} /><span className="tweet-title-details">{props.detail} </span>        
+                </div>    
+                <div>
+                    <p className="tweet-text ">
+                        {props.children}   
+                     </p>
+                 </div>
+                 <div className="tweet-image">
+                    <img src={props.src} />
+                 </div>
+                 <div className="tweet-actions ">
+                    <div className="tweet-action"><img src={comment} /><span>{props.details} </span></div>
+                    <div className="tweet-action"><img src={retweet} /><span>{props.id} </span></div>
+                    <div className="tweet-action"><img src={like} /><span>{props.content} </span></div>
+                    <div className="tweet-action"><img src={downlord} /></div> 
+                </div>
+                 
+            </div>
         </div>
-    )
+            
+            )
 }
-function Tweet_text(){
-    return(
-        <p className="tweet-text">
-        President Joe biden touted a new agreement reached with the European Union to ease Trump-era tariffd on aluminium
-    </p>
-    )
-}
+
+
+
+
+
 
