@@ -11,7 +11,7 @@ function Layout({children}) {
             </div>
             {children}
             <div className="right-sidebar">  
-            <Trends />
+                <Trends />
             </div>
         </>
     );

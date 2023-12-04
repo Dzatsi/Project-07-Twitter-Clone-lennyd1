@@ -198,6 +198,8 @@ body{
     justify-content: center;
     gap: 20px;
 }
+
+/* add css for the left sidebar */
 .photoTweet{
     width: 2rem; 
 }
@@ -210,4 +212,51 @@ body{
 }
 .text_left{
     padding-left: 0.5rem;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+.button_left{
+    text-transform: capitalize;
+    padding: .7rem 5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #1D9BF0;
+    color: white;
+    font-size: 1rem;
+}
+.div_button_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* add css for the right-sidebar  */
+.right-sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.8rem;
+    font-family: 'Inter', sans-serif;
+}
+.first-section-rigth{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    gap: 1.5rem;
+}
+.div-components-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6E767D;
+    border-radius: 20px;
+}
+.input{
+    border-radius: 40px;
 }
