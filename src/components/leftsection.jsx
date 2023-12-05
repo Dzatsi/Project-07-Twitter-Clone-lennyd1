@@ -1,4 +1,5 @@
-
+import notification from "../images/Notifications.svg"
+import notifone from "../images/notifone.svg"
 
 function LeftSection(props){
     return(
@@ -8,9 +9,27 @@ function LeftSection(props){
             </div>
 
             <div className="text_left">
-                <h4 className="page-title">{props.id}</h4>
+                <h4 className="text-title">{props.id}</h4>
             </div>
        </div>
     )
 }
-export default LeftSection
+function Notification(){
+    return(
+        <div class="container_left">
+                <div className="container">
+                    <div>
+                        <img className="photoTweet" src={notification} alt="icone notification" />
+                    </div>
+                    <div class="chiffre">
+                        <img src={notifone} alt="icone pour 1" />
+                    </div>
+                </div>
+                
+                <div className="text_left">
+                    <h4 className="text-title">Notificatios</h4>
+                </div>
+        </div>
+    )
+}
+export {LeftSection, Notification}

@@ -3,6 +3,7 @@ import poll from "../images/Poll.svg"
 import gif from "../images/Gif.svg"
 import schedule from "../images/Schedule.svg"
 import media from "../images/Media.svg"
+import emoji from "../images/Emoji.svg"
 
 
 function Tweet_Editor (){
@@ -55,7 +56,7 @@ function Tweet_editor_actions (){
             <img src={media} />
             <img src={gif} />
             <img src={poll} />
-            <img />
+            <img src={emoji} />
             <img src={schedule} />
         </div>
     )
