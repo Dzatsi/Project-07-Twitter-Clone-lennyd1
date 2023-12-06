@@ -1,6 +1,6 @@
 import {RightSection, PrintShowMore, SecondSectionRight} from "./rightsection"
 import reglage from "../images/reglage.png"
-import searchIcon from "../images/Searchicon.png"
+import searchIcon from "../images/SearchIcon.png"
 import more from "../images/MoreB.svg"
 import image from "../images/profil.png"
 import twitter from "../images/twitter.svg"
