@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import Header from '../components/header.jsx';
 import Tweet_Editor from '../components/tweetEditor';
 import Tweets from '../components/tweets';
