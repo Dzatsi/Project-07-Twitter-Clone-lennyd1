@@ -325,3 +325,20 @@ body{
     display: flex;
     gap: .5rem;
 }
+
+/* Add CSS for UserProfil */
+.container-image{
+    position: relative;
+}
+.child-container{
+    position: absolute;
+    top: 16rem;
+    left: 2rem;
+}
+#couverture_image{
+    width: 100%;
+}
+#profil_image{
+    width: 12rem;
+    border-radius: 100px;
+}
