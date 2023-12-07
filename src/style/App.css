@@ -210,6 +210,11 @@ body{
     display: flex;
     align-items: center;
 }
+.container_left:hover{
+    background-color: #6E767D;
+    opacity: 1;
+    border-radius: 35px;
+}
 .text_left{
     padding-left: 0.5rem;
 }
@@ -332,13 +337,13 @@ body{
 }
 .child-container{
     position: absolute;
-    top: 16rem;
+    top: 13rem;
     left: 2rem;
 }
 #couverture_image{
     width: 100%;
 }
 #profil_image{
-    width: 12rem;
+    width: 7rem;
     border-radius: 100px;
 }

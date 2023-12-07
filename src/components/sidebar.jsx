@@ -7,7 +7,7 @@ import bookmark from "../images/Bookmarks.svg"
 import list from "../images/Lists.svg"
 import profil from "../images/profilB.svg"
 import more from "../images/More.svg"
-
+import { Link } from "react-router-dom";
 
 function Sidebar(){
     return(
@@ -15,13 +15,13 @@ function Sidebar(){
             <div className="icone_left">
                 <img className="photoTweet" src={photo} alt="logo tweet blanc" />
             </div>
-            <LeftSection img={home} txt="icone menu" id="Home" />
+             <Link to='/'><LeftSection img={home} txt="icone menu" id="Home" /></Link>   
             <LeftSection img={explore} txt="icone menu" id="Explore" />
             <Notification />
             <LeftSection img={message} txt="icone menu" id="Messages" />
             <LeftSection img={bookmark} txt="icone menu" id="Bookmarks" />
             <LeftSection img={list} txt="icone menu" id="Lists" />
-            <LeftSection img={profil} txt="icone menu" id="Profile" />
+            <Link to='/userprofil'><LeftSection img={profil} txt="icone menu" id="Profile" /></Link> 
             <LeftSection img={more} txt="icone menu" id="More" />
             <div className="div_button_left">
                 <button className="button_left">Tweet</button>

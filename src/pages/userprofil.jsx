@@ -8,10 +8,10 @@ import bidens from "../images/bidens.jpg"
 function UserProfil(){
     return(
         <div className="profil-container">
-                <Sidebar />
+                {/* <Sidebar /> */}
                 <HeaderProfil />
                 <Tweets />            
-                <Trends />
+                {/* <Trends /> */}
         </div>
     )
 }
@@ -27,4 +27,4 @@ function HeaderProfil(){
     )
 }
 
-export {UserProfil}
+export default UserProfil
