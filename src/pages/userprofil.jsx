@@ -1,25 +1,21 @@
-import Sidebar from "../components/sidebar.jsx"
-import Trends from "../components/trends"
 import Tweets from "../components/tweets.jsx"
-import couverture from "../images/couvertureL.jpeg"
+import couverture from "../images/fleuve.jpg"
 import bidens from "../images/bidens.jpg"
 
 
 function UserProfil(){
     return(
         <div className="profil-container">
-                {/* <Sidebar /> */}
-                <HeaderProfil />
+                <HeaderProfil src={couverture} />
                 <Tweets />            
-                {/* <Trends /> */}
         </div>
     )
 }
 
-function HeaderProfil(){
+function HeaderProfil(props){
     return(
         <div className="container-image">
-            <img id="couverture_image" src={couverture} />
+            <img id="couverture_image" src={props.src} />
             <div className="child-container">
                 <img id="profil_image" src={bidens} />
             </div>
@@ -27,4 +23,4 @@ function HeaderProfil(){
     )
 }
 
-export default UserProfil
+export  {UserProfil, HeaderProfil}

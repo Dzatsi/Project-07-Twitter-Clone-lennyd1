@@ -1,3 +1,4 @@
+import { Certification } from "./tweets"
 
 function RightSection(props){
     return(
@@ -22,9 +23,13 @@ function SecondSectionRight(props){
                         <img className="image" src={props.src} alt="logo tweet" />
                     </div>
                     <div className="text">
-                        <p id="first">{props.text}</p>
-                        <p className="text-detail">{props.detail}</p>
+                        <div>
+                            <p id="first">{props.text}</p>
+                            <p className="text-detail">{props.detail}</p>
+                        </div>
+                        <Certification />
                     </div>
+                    
                 </div>
                 
                 <div >

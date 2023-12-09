@@ -14,7 +14,7 @@ export default function Tweets(props){
             <div className="tweet-content">
                 <div className="tweet-title" >
                     <h2 tweet-title-author>{props.title} </h2>
-                    <img src={group} /><span className="tweet-title-details">{props.detail} </span>        
+                    <Certification /><span className="tweet-title-details">{props.detail} </span>        
                 </div>    
                 <div>
                     <p className="tweet-text ">
@@ -37,6 +37,13 @@ export default function Tweets(props){
             )
 }
 
+function Certification(){
+    return(
+        <img id="certification" src={group} alt="logo certification" />
+    )
+}
+
+export {Certification}
 
 
 

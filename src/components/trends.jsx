@@ -5,6 +5,7 @@ import more from "../images/MoreB.svg"
 import image from "../images/profil.png"
 import twitter from "../images/twitter.svg"
 import lenny from "../images/dzatsi.jpeg"
+import { Link } from "react-router-dom"
 
 
 function Trends(){
@@ -36,7 +37,7 @@ function Trends(){
             <div className="div-components-right">
                 <h3 id="title-second-section">Who to follow</h3>
                 <SecondSectionRight src={image} text="CNN" detail="@CNN" />
-                <SecondSectionRight src={lenny} text="Lenny Dzatsi" detail="@leteta" />
+                <Link to='/userprofil'><SecondSectionRight src={lenny} text="Lenny Dzatsi" detail="@leteta" /></Link> 
                 <SecondSectionRight src={twitter} text="Twitter" detail="@twitter" />
                 <PrintShowMore />
             </div>  
