@@ -211,7 +211,7 @@ body{
     align-items: center;
 }
 .container_left:hover{
-    background-color: #6E767D;
+    background-color: #071a14;
     opacity: 1;
     border-radius: 35px;
 }
@@ -241,6 +241,10 @@ body{
 .div_button_left{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.compte-id{
+    display: flex;
     align-items: center;
 }
 
@@ -339,24 +343,78 @@ body{
 
 
 /* Add CSS for UserProfil */
+
 .container-image{
-    position: relative;
-    width: 100%;
-    height: 28%;
+    /* position: relative; */
+    /* width: 100%; */
+    /* height: 20%; */
 }
 .child-container{
-    position: absolute;
-    top: 10.5rem;
-    left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #couverture_image{
     width: 100%;
-    max-height: 100%;
 }
 #profil_image{
     width: 7rem;
     border-radius: 100px;
+    position: relative;
+    bottom: 3rem;
+    left: 1.5rem;
 }
 #certification{
     width: 1rem;
+}
+.icone-userprofil{
+    display: flex;
+    justify-content: space-around;
+    gap: .6rem;
+    position: relative;
+    bottom: 1.5rem;
+    right: 1rem;
+}
+.alt-profil{
+    position: relative;
+    bottom: 3rem;
+    left: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+}
+.profil-description{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    padding-left: .5rem;
+}
+.follow-div{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    height: 3rem;
+    padding-left: .5rem;
+}
+.post-tweets{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Inter', sans-serif ;
+    border-bottom: 1px solid rgb(215, 210, 210) ;
+}
+.post-tweet-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 3rem;
+}
+.post-tweet-container:hover{
+    background-color: rgb(46, 40, 40);
+}
+.post-tweet-paragraph:hover{
+    border-bottom: 4px solid blue;
+}
+/* ajouts */
+.tweet-action-button-react{
+    display: flex;
+    gap: 10px;
 }

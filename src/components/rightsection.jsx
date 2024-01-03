@@ -1,3 +1,4 @@
+import React, { useState } from "react"
 import { Certification } from "./tweets"
 
 function RightSection(props){
@@ -16,6 +17,7 @@ function RightSection(props){
 }
 
 function SecondSectionRight(props){
+    
     return(
             <div className="second-section-right">
                 <div id="composant">
@@ -33,9 +35,25 @@ function SecondSectionRight(props){
                 </div>
                 
                 <div >
-                    <button className="button-right">Follow</button>
+                    <ButtonFollow />
                 </div>
             </div>
+    )
+}
+
+function ButtonFollow(){
+    const[Follow, setFollow] = useState('Follow');
+
+    const handleClick = () => {
+        if(Follow === 'Follow'){
+            setFollow('Unfollow');
+        }else{
+            setFollow('Follow');
+        }
+        
+    }
+    return(
+        <button onClick={handleClick} className="button-right">{Follow }</button>
     )
 }
 
@@ -44,4 +62,5 @@ function PrintShowMore(){
         <h5 id="text-blue">Show more</h5>
     )
 }
-export {RightSection, PrintShowMore, SecondSectionRight}
+export {RightSection, PrintShowMore, SecondSectionRight, ButtonFollow}
+
