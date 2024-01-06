@@ -36,7 +36,7 @@ function Trends(){
             </div>  
             <div className="div-components-right">
                 <h3 id="title-second-section">Who to follow</h3>
-                <SecondSectionRight src={image} text="CNN" detail="@CNN" />
+                <Link to='/username' ><SecondSectionRight src={image} text="CNN" detail="@CNN" /></Link> 
                 <Link to='/userprofil'><SecondSectionRight src={lenny} text="Lenny Dzatsi" detail="@leteta" /></Link> 
                 <SecondSectionRight src={twitter} text="Twitter" detail="@twitter" />
                 <PrintShowMore />
