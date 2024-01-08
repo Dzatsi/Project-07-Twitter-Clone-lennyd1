@@ -228,6 +228,9 @@ body{
     justify-content: center;
     padding-left: 1rem;
     font-family: 'Inter', sans-serif;
+    position: sticky;
+    left: 0;
+    top: 0;
 }
 .button_left{
     text-transform: capitalize;
@@ -255,6 +258,9 @@ body{
     gap: 1rem;
     padding: 0.8rem;
     font-family: 'Inter', sans-serif;
+    position: sticky;
+    top: 0;
+    right: 0;
 }
 .first-section-rigth{
     display: flex;
