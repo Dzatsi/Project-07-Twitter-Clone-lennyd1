@@ -258,9 +258,9 @@ body{
     gap: 1rem;
     padding: 0.8rem;
     font-family: 'Inter', sans-serif;
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    right: 0;
+    right: 0; */
 }
 .first-section-rigth{
     display: flex;
