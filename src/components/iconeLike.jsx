@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import like from "../images/Like.svg"
 import liked from "../images/Liked.svg"
 
-
 export default function IconLike({counts}) {
 
     const [icon, setIcon] = useState(true)
@@ -19,15 +18,11 @@ export default function IconLike({counts}) {
             setCount(count +1)
         }
     }
-    
-    const divStyles = {
-        color: !icon ? 'red' : ' ',
-    }
-    
+        
       return (
         <div className="tweet-action-button-react" title="like">
             <img onClick={()=>{changeIcon(), handleClick()}} src={`${icon ? like : liked}`} />
-            <span style={divStyles}>{count}</span>
+            <span id="datails-likes">{count}</span>
         </div>
       )
     }

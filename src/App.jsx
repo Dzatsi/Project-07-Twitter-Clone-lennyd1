@@ -5,6 +5,7 @@ import {UserProfil} from "./pages/userprofil.jsx";
 import UserName from "./pages/username.jsx"
 import('./style/reset.css');
 import('./style/App.css');
+import('./style/icone.css');
 
 export default function App() {
   return (

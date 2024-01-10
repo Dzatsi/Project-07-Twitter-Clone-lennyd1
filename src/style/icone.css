@@ -1,0 +1,18 @@
+#details-comments:hover{
+    color: blue;
+}
+#details-comments{
+    cursor: pointer;
+}
+#details-retweets{
+    cursor: pointer;
+}
+#details-retweets:hover{
+    color: green;
+}
+#datails-likes:hover{
+    color: red;
+}
+#datails-likes{
+    cursor: pointer;
+}
