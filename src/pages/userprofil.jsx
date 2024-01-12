@@ -77,7 +77,7 @@ function HeaderProfil(props){
 function Posts(){
     return(
         <div className="post-tweets">
-            <div className="post-tweet-container"><p className="post-tweet-paragraph tweet-title-details">Posts</p></div>
+            <div className="post-tweet-container" id="posts"><p className="post-tweet-paragraph tweet-title-details">Posts</p></div>
             <div className="post-tweet-container"><p className="post-tweet-paragraph tweet-title-details">Replies</p></div>
             <div className="post-tweet-container"><p className="post-tweet-paragraph tweet-title-details">Highlights</p></div>
             <div className="post-tweet-container"><p className="post-tweet-paragraph tweet-title-details">Media</p></div>

@@ -5,6 +5,7 @@ import comment from "../images/comment.svg"
 import downlord from "../images/Downlord.svg"
 import IconLike from "./iconeLike"
 import data from "./data"
+import IconeComment from "./iconeComment"
 
 
 
@@ -28,8 +29,11 @@ export default function Tweets(props){
                     <img src={props.src} />
                  </div>
                  <div className="tweet-actions ">
-                    <div className="tweet-action" title="comment"><img src={comment} /><span id="details-comments">{props.details} </span></div>
-                    <div className="tweet-action" title="retweet"><img src={retweet} /><span id="details-retweets">{props.id} </span></div>
+                    <IconeComment details={data.comments} />
+                    <div className="tweet-action" title="retweet">
+                        <img src={retweet} />
+                        <span id="details-retweets">{props.id} </span>
+                    </div>
                     <IconLike counts={data.like} key={data.id} />
                     <div className="tweet-action" title="send"><img src={downlord} /></div> 
                 </div>
