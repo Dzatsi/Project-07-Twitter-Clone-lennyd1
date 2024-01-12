@@ -1,11 +1,10 @@
 import React, { useState } from "react"
 import group from "../images/Group.svg"
-import retweet from "../images/Retweet.svg"
-import comment from "../images/comment.svg"
 import downlord from "../images/Downlord.svg"
 import IconLike from "./iconeLike"
 import data from "./data"
 import IconeComment from "./iconeComment"
+import Iconeretweet from "./iconeRetweet"
 
 
 
@@ -30,10 +29,7 @@ export default function Tweets(props){
                  </div>
                  <div className="tweet-actions ">
                     <IconeComment details={data.comments} />
-                    <div className="tweet-action" title="retweet">
-                        <img src={retweet} />
-                        <span id="details-retweets">{props.id} </span>
-                    </div>
+                    <Iconeretweet details={data.retweet} />
                     <IconLike counts={data.like} key={data.id} />
                     <div className="tweet-action" title="send"><img src={downlord} /></div> 
                 </div>
