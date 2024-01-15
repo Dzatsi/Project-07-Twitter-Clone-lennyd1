@@ -1,44 +1,75 @@
-.tweet-action-button-react{
-
+/* add css for the like button */
+/* .tweet-action-button-react{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
+} */
 
-.tweet-action-button-react:hover .svg-like{
+.icone-like:hover .svg-like{
     background: rgba(234, 155, 155, 0.306);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     stroke: red;
 }
-.svg-like{
+.icone-like svg{
     padding: 7px;
     justify-content: center;
     align-items: center;
+    width: 2rem;
 }
-.tweet-action-button-react:hover .svg-like svg path{
+.icone-like:hover .svg-like svg path{
     stroke: red;
 }
-.tweet-action-button-react:hover {
+.icone-like:hover {
     color: red;
     cursor: pointer;
 }
-
-
 .svg-likes svg path{
     fill: none;
     stroke: gray;
 }
+
+/* add css for the comment button */
 .svg-comment:hover{
     fill: blue;
     stroke: blue;
     color: blue;
+    cursor: pointer;
 }
+.svg-comment svg:hover{
+    background: rgba(135, 135, 240, 0.32);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    stroke: blue;
+}
+.svg-comment svg{
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+}
+
+/* add css for the retweet button */
 .svg-retweet:hover{
     fill: green;
     stroke: green;
     color: green;
     cursor: pointer;
 }
+.svg-retweet svg:hover{
+    background: rgba(152, 228, 152, 0.215);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    stroke: green;
+}
+.svg-retweet svg{
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+}
+
