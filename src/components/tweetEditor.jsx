@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import profil from "../images/profile.png";
 import poll from "../images/Poll.svg"
 import gif from "../images/Gif.svg"
@@ -9,7 +10,7 @@ import emoji from "../images/Emoji.svg"
 function Tweet_Editor (){
     return (
         <section className="tweet-editor">
-        <Avatar />
+        <Link to='/userprofil' ><Avatar /></Link>
         <Tweet_editor_form />
         </section>
         

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import React, { useState } from "react"
 import group from "../images/Group.svg"
 import downlord from "../images/Downlord.svg"
@@ -12,7 +13,7 @@ export default function Tweets(props){
     return (
         <div className="tweet">
             <div>
-                <img  src={props.profil} />
+                <Link to='/username'><img  src={props.profil} /></Link>
             </div>
             <div className="tweet-content">
                 <div className="tweet-title" >
