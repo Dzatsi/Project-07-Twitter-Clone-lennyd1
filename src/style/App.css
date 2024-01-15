@@ -206,6 +206,15 @@ body{
 .icone_left{
     padding: 1rem;
 }
+.container-notification{
+    display: flex;
+    padding: 1rem;
+    position: relative;
+}
+.chiffre-notification{
+    position: absolute;
+    right: 9px;
+}
 .container_left{
     display: flex;
     align-items: center;
@@ -251,6 +260,7 @@ body{
     align-items: center;
 }
 
+
 /* add css for the right-sidebar  */
 .right-sidebar{
     display: flex;
@@ -285,14 +295,7 @@ body{
     background-color: black;
     border: none;
 }
-.container{
-    display: flex;
-    padding: 1rem;
-}
-.chiffre{
-    margin-left: -10px;
-    margin-bottom: 9px;
-}
+
 .text_details{
     color: grey;
     font-size: 0.7rem;

@@ -17,11 +17,11 @@ function LeftSection(props){
 function Notification(){
     return(
         <div class="container_left">
-                <div className="container">
+                <div className="container-notification">
                     <div>
                         <img className="photoTweet" src={notification} alt="icone notification" />
                     </div>
-                    <div class="chiffre">
+                    <div class="chiffre-notification">
                         <img src={notifone} alt="icone pour 1" />
                     </div>
                 </div>
