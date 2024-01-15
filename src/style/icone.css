@@ -1,10 +1,4 @@
-/* add css for the like button */
-/* .tweet-action-button-react{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-} */
+/* add css for the icone for tweets action */
 
 .icone-like:hover .svg-like{
     background: rgba(234, 155, 155, 0.306);
