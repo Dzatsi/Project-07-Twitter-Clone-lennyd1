@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Certification } from "./tweets"
+import { Certification } from "./tweet"
 
 function RightSection(props){
     return(
