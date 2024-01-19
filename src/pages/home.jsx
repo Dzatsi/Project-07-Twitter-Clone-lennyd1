@@ -7,7 +7,7 @@ import Tweets from '../components/tweet.jsx';
 function Home() {
   return (
     <main className="timeline">
-      <Header />
+      <Header ressource="Home" />
       <Tweet_Editor />
       <Tweets />
     </main>

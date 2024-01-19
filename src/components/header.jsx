@@ -1,19 +1,15 @@
 import React from 'react';
 import img from "../images/timlines.svg";
 
-function Header () {
+function Header (props) {
     return (
         <header className="header">
-            <Home />           
+            <h1 className="page-title">{props.ressource} </h1>
             <Icone />
         </header>        
     )
 }
-function Home (){
-    return(
-        <h1 className="page-title">Home</h1>
-    );
-}
+
 function Icone (){
     return (
         <img className="top-tweets" src={img} alt='logo for popular tweet' />

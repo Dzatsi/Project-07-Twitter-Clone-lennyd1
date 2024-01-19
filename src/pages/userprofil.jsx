@@ -4,15 +4,13 @@ import bidens from "../images/bidens.jpg"
 import message from "../images/Messages.svg"
 import more from "../images/More.svg"
 import { ButtonFollow } from "../components/rightsection.jsx"
-import feuille from "../images/feuille.png"
-import profil from "../images/profil.png"
-import image from "../images/image.svg"
-import twitter from "../images/twitter.svg"
+import Header from "../components/header.jsx"
 
 
 function UserProfil(){
     return(
         <div className="timeline">
+            <Header ressource="Profil" />
             <div className="profil-container">
                 <HeaderProfil src={couverture} profil={bidens} name="Lenny Dzatsi" details='@Leteta' />
             </div>
