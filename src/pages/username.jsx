@@ -1,4 +1,5 @@
-import {HeaderProfil, TextANdFollowers, Posts} from "./userprofil"
+import {TextANdFollowers, Posts} from "./userprofil"
+import HeaderProfil from "../components/headerprofil.jsx"
 import couverture from "../images/cnn.jpeg"
 import Tweets from "../components/tweets.jsx"
 import logo from "../images/profil.png"

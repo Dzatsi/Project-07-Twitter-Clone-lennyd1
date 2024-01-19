@@ -373,8 +373,18 @@ body{
     justify-content: space-around;
     gap: .6rem;
     position: relative;
-    bottom: 3.7rem;
+    bottom: 3.1rem;
     right: 1rem;
+}
+.edit-profil-btn{
+    text-transform: capitalize;
+    padding: .7rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #e5ecf1;
+    color: rgb(18, 17, 17);
+    font-size: 1rem;
+    font-weight: 700;
 }
 .alt-profil{
     position: relative;

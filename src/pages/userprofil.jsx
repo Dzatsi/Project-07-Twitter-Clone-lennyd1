@@ -1,9 +1,6 @@
 import Tweets from "../components/tweet.jsx"
-import couverture from "../images/fleuve.jpg"
+import cover from "../images/fleuve.jpg"
 import bidens from "../images/bidens.jpg"
-import message from "../images/Messages.svg"
-import more from "../images/More.svg"
-import { ButtonFollow } from "../components/rightsection.jsx"
 import Header from "../components/header.jsx"
 
 
@@ -12,23 +9,21 @@ function UserProfil(){
         <div className="timeline">
             <Header ressource="Profil" />
             <div className="profil-container">
-                <HeaderProfil src={couverture} profil={bidens} name="Lenny Dzatsi" details='@Leteta' />
+                <Coverage src={cover} profil={bidens} name="Lenny Dzatsi" details='@Leteta' />
             </div>
             <TextANdFollowers paragraph="President Joe Biden a new agreement reached with the European union to ease 
                 Trume era tariffs on aluminum and steel as a 'major breakthough' that would service 
                 to both strengthen the US" followers="158000 followers" following="132 followings" />   
             <Posts />
             <Tweets />
-        </div>
-        
+        </div> 
     )
 }
 
-function HeaderProfil(props){
+function Coverage(props){
     return(
         <>
             <img id="couverture_image" src={props.src}  />
-            
             <div className="child-container">
                 <div>
                     <img id="profil_image" src={props.profil} />
@@ -36,9 +31,7 @@ function HeaderProfil(props){
                     <p className="alt-profil tweet-title-details">{props.details} </p>
                 </div>
                 <div className="icone-userprofil">
-                    <img src={more} alt='logo more' />
-                    <img src={message} alt='logo message' />
-                    <ButtonFollow />
+                    <button className="edit-profil-btn">Edit Profil</button>
                 </div>
             </div>
         </>
@@ -70,4 +63,4 @@ function TextANdFollowers(text){
     )
 }
 
-export  {UserProfil, HeaderProfil, Posts, TextANdFollowers}
+export  {UserProfil, Posts, TextANdFollowers}
