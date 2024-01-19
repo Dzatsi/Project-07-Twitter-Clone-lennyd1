@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import data from "./data.jsx"
 import certifier from "../images/Group.svg"
 import downlord from "../images/Downlord.svg"
@@ -14,7 +15,7 @@ export default function Tweet(){
                     return(
                         <div className="tweet" key={tweet.id}>
                             <div>
-                                <img src={tweet.profil} alt="profil" />
+                            <Link to="/username"><img src={tweet.profil} alt="profil" /></Link>
                             </div>
 
                             <div className="tweet-content">
