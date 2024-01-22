@@ -12,7 +12,7 @@ function Trends(){
     return(
         <div className="right-sidebar">
             <div className="search">
-                <div>
+                <div id="iconeSearch">
                     <img src={searchIcon} />
                 </div>
                 <div>
